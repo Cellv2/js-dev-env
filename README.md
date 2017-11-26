@@ -24,7 +24,7 @@ The list of supported IDEs can be found on the [EditorConfig website][ec-website
 
 ### Package Manager
 
-This boilerplate is built with [NodeJS/npm][node-download] in mind. Sorry yarn users!
+This boilerplate is built with npm in mind. Sorry yarn users!
 
 
 ### Package Security
@@ -36,5 +36,4 @@ In the future, alternative scripts (probably suffixed with -noNSP) will be made 
 [//]: # (Reference links)
 
 [ec-website]: <http://editorconfig.org/#download>
-[node-download]: <https://nodejs.org/en/download/>
 [nsc-website]: <https://nodesecurity.io/>

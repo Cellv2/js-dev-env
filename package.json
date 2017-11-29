@@ -15,7 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/Cellv2/js-dev-env.git"
   },
-  "keywords": ["JS", "JavaScript", "Development", "Environment", "Boilerplate"],
+  "keywords": [
+    "JS",
+    "JavaScript",
+    "Development",
+    "Environment",
+    "Boilerplate"
+  ],
   "author": "Cellv2",
   "license": "MIT",
   "bugs": {

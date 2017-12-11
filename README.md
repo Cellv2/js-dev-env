@@ -33,7 +33,22 @@ This boilerplate is built with npm in mind. Sorry yarn users!
 
 In the future, alternative scripts (probably suffixed with -noNSP) will be made available to skip the security check in case you do not have an active internet connection.
 
+
+### Linting
+
+ESLint has been chosen as the linter here, and is using the [ESLint Recommended rule set][eslint-rules].
+
+Plugins for import warnings and errors are used to help identify any problems with importing early on. ES7 (ECMAScript 2016) has been set and standard JavaScript modules are set in the parser options.
+
+Finally, 'no-console' has been set to 1 in order to warn against console logging (rather than the default of erroring in the ESLint Recommended rules). Console.log does have its place.
+
+#### Notes
+
+If you're having any issues with the linting rules, please ensure that any linting plugins for your IDE are disabled, as this can cause ESLint some confusion.
+
+
 [//]: # (Reference links)
 
 [ec-website]: <http://editorconfig.org/#download>
 [nsc-website]: <https://nodesecurity.io/>
+[eslint-rules]: https://eslint.org/docs/rules/

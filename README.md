@@ -47,8 +47,23 @@ Finally, 'no-console' has been set to 1 in order to warn against console logging
 If you're having any issues with the linting rules, please ensure that any linting plugins for your IDE are disabled, as this can cause ESLint some confusion.
 
 
+### Testing
+
+This boilerplate uses [Mocha][mocha-website] as its testing framework and [Chai][chai-website] as the assertion library.
+
+
+### Continuous Integration
+
+Both [TravisCI][travis-website] and [AppVeyor][appveyor-website] are used to ensure that the project builds in both a Linux and Windows environment. The version of Node used can be altered in the respective .yml files.
+
+
+
 [//]: # (Reference links)
 
+[appveyor-website]: <https://www.appveyor.com/>
+[chai-website]: <http://chaijs.com/>
 [ec-website]: <http://editorconfig.org/#download>
-[nsc-website]: <https://nodesecurity.io/>
 [eslint-rules]: https://eslint.org/docs/rules/
+[nsc-website]: <https://nodesecurity.io/>
+[mocha-website]: <https://mochajs.org/>
+[travis-website]: <https://travis-ci.org/>

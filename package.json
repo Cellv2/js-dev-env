@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node envScripts/startMessage.js",
-    "start": "run-p  security-check open:src lint:watch test:watch",
+    "start": "run-p security-check open:src lint:watch test:watch start-mockapi",
     "open:src": "babel-node envScripts/srcServer.js",
     "lint": "esw webpack.config.* src envScripts --color",
     "lint:watch": "npm run lint -- --watch",
@@ -13,13 +13,22 @@
     "localtunnel": "lt --port 3000",
     "share": "run-p open:src localtunnel",
     "test": "mocha --reporter progress envScripts/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "generate-mock-data": "babel-node envScripts/generateMockData",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cellv2/js-dev-env.git"
   },
-  "keywords": ["JS", "JavaScript", "Development", "Environment", "Boilerplate"],
+  "keywords": [
+    "JS",
+    "JavaScript",
+    "Development",
+    "Environment",
+    "Boilerplate"
+  ],
   "author": "Cellv2",
   "license": "MIT",
   "bugs": {
